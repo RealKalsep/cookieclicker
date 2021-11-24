@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cookie Clicker V1</title>
+        <link rel="stylesheet" href="cookie.css">
+        <script src="cookiedev.js"></script>
+        <!-- cookiedev is for development and testing purposes, please remove "dev" if you are willing to use the stable version -->
+    </head>
+    <body>
+        <img src="img/title.png">
+        <br>
+        <button class="button" onclick="save()">Save progress</button>
+        <p class="nobr">WARNING: DELETES ALL YOUR PROGRESS! REALLY!</p>
+        <button class="button" onclick="reset()">Reset progress</button>
+        <div class="game">
+            <p id="cookies">Cookies: 0</p>
+            <p id="cursors">Cursors: 0</p>
+            <p id="anonygolds">Anonygolds: 0</p>
+            <p id="artayoos">Artayoos: 0</p>
+        </div>
+        <div class="interact">
+            <button class="button" onclick="getCookie()">Cookie</button>
+            <p>Upgrades</p>
+            <button class="button" onclick="buy('cursors', 1)">Buy 1 Cursor</button>
+            <button class="button" onclick="buy('cursors', 10)">Buy 10 Cursors</button>
+            <button class="button" onclick="buy('cursors', 100)">Buy 100 Cursors</button>
+            <br>
+            <button class="button" onclick="buy('anonygolds', 1)">Buy 1 Anonygold</button>
+            <button class="button" onclick="buy('anonygolds', 10)">Buy 10 Anonygolds</button>
+            <button class="button" onclick="buy('anonygolds', 100)">Buy 100 Anonygolds</button>
+            <br>
+            <button class="button" onclick="buy('artayoos', 1)">Buy 1 Artayoo</button>
+            <button class="button" onclick="buy('artayoos', 10)">Buy 10 Artayoos</button>
+            <button class="button" onclick="buy('artayoos', 100)">Buy 100 Artayoos</button>
+        </div>
+    </body>
+</html>
